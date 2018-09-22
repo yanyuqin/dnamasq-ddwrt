@@ -35,6 +35,22 @@
 	 -P /opt/etc/dnsmasq.d --no-check-certificate  
    
      dnsmasq_gfwlist.conf 下GFW域名默认走127.0.0.1#5353
-### 防运营商ISP污染DNS 
+### 添加防ISP污染配置 
     wget  https://github.com/felixonmars/dnsmasq-china-list/raw/master/bogus-nxdomain.china.conf	 
+##  6、配置DNScrypt-proxy
+
+    listen_addresses = ['127.0.0.1:5353']  
+    ipv4_servers = true  
+    ipv6_servers = false  
+    dnscrypt_servers = false  
+#### doh_servers = true 
+    force_tcp = true 
+##	 7、启动服务测试
+dig -p 5353 @127.0.0.1 www.google.com  
+dig  @127.0.0.1 www.google.com  
+dig  @127.0.0.1 www.baidu.com  
+
+	
+
+
 
