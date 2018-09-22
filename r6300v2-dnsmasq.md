@@ -37,7 +37,8 @@
 > -P /opt/etc/dnsmasq.d --no-check-certificate  
    
 #### 防ISP污染配置 
-    wget  https://github.com/felixonmars/dnsmasq-china-list/raw/master/bogus-nxdomain.china.conf	 
+> /opt/bin/wget  https://github.com/felixonmars/dnsmasq-china-list/raw/master/bogus-nxdomain.china.conf \  
+> -P /opt/etc/dnsmasq.d --no-check-certificate	 
 ##  6、配置DNScrypt-proxy
 > dnsmasq_gfwlist.conf GFW域名默认走127.0.0.1#5353
 > listen_addresses = ['127.0.0.1:5353']  
