@@ -7,10 +7,10 @@
 	     wget  http://bin.entware.net/armv7sf-k3.2/installer/generic.sh  
          运行generic.sh
 ##  4、安装dnsmasq和dnscrypt-proxy2  
-      opkg list |grep ^dns  
-      opkg install dnsmasq  
-      opkg install  dnscrypt-proxy
-	  opkg install wget dig 等
+> opkg list |grep ^dns  
+> opkg install dnsmasq  
+> opkg install  dnscrypt-proxy  
+> opkg install wget dig 等
 ## 5、配置DNSmasq 
 ###      	vi dnsmasq.conf
       port=53
@@ -42,9 +42,10 @@
     listen_addresses = ['127.0.0.1:5353']  
     ipv4_servers = true  
     ipv6_servers = false  
-    dnscrypt_servers = false  
-#### doh_servers = true 
-    force_tcp = true 
+    dnscrypt_servers = false
+**doh_servers = true**  
+    force_tcp = true      
+.dhcp-lease-max 
 ##	 7、启动服务测试  
     dig -p 5353 @127.0.0.1 www.google.com  
     dig  @127.0.0.1 www.google.com  
