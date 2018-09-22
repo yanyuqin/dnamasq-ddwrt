@@ -45,7 +45,7 @@
     dnscrypt_servers = false  
 #### doh_servers = true 
     force_tcp = true 
-##	 7、启动服务测试
+##	 7、启动服务测试  
 dig -p 5353 @127.0.0.1 www.google.com  
 dig  @127.0.0.1 www.google.com  
 dig  @127.0.0.1 www.baidu.com  
