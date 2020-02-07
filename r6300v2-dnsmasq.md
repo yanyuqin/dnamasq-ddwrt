@@ -18,6 +18,7 @@
 > bogus-priv  
 > no-resolv  
 > no-poll  
+> all-servers
 > server=1.2.4.8  
 > server=180.76.76.76  
 > conf-dir=/opt/etc/dnsmasq.d  
