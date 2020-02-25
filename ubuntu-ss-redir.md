@@ -1,5 +1,6 @@
 本文是Linux（Ubuntu）客户端使用SS科学上网设置，配合dnscrypt-proxy使用
-#1. shadowsocks-libev 编译 
+
+# 1. shadowsocks-libev 编译 
 ## 1.1准备工作
 ### Installation of basic build dependencies
 ### Debian / Ubuntu
